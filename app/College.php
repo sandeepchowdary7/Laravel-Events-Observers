@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Enrollment;
 
 class College extends Model
 {
@@ -31,4 +32,5 @@ class College extends Model
 	{
 		return $this->hasOne(Enrollment::class);
 	}
+
 }
